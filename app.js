@@ -11,10 +11,4 @@ app.get('/register', function(req, res) { res.sendFile(path.join(__dirname, './v
 
 app.get('/login', function(req, res) { res.sendFile(path.join(__dirname, './views/login.html'))} )
 
-app.listen(process.env.PUERTO || 3000, function(){
-    console.log('Servidor Corriendo en el puerto 3000')
-});
-
-
-
-app.listen(PUERTO, () => console.log('Servidor corriendo'))
+app.listen(process.env.PUERTO || 3000, () => console.log('Servidor corriendo'))
