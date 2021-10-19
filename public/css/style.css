@@ -1,0 +1,420 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body i{ 
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.top-header{
+    flex-wrap: wrap;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+header{
+    background-color: #EAC926;
+    width: 100%;
+}
+
+.logo{
+    width: 40vw;
+    height: 125px;
+    min-width: 226px;
+}
+
+.burger-menu{
+    display: flex;
+}
+
+.fa-bars{
+    background-color: #03264C;
+    color: white;
+    display: inline-block;
+    padding: 8px 8px 8px 8px;
+    border-radius: 15%;
+    margin: 8px 50%;
+}
+
+.contenedor-buscador{
+    align-self: center;
+    display: flex;
+    width: 30vw;
+    min-width: 186px;
+    text-align: center;
+}
+
+.contenedor-buscador input{
+    width: 85%;
+    height: 22px;
+    align-self: center;
+}
+
+.contenedor-buscador button{
+    align-self: center;
+    font-size: 10px;
+    left: -5px;
+    top: -1px;
+    height: 22px;
+    width: 22px;
+    position: relative;
+}
+
+.fa-search{
+    background-color: #ebebeb;
+}  
+
+.parraf-compra{
+    min-width: 180px;
+    font-size: 15px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.parraf-compra i{
+    margin-right: 3px;
+}
+
+li{
+    justify-content: space-around;
+}
+
+li a{
+    text-decoration: none;
+    color: #222;
+    display: block;
+    padding: 5px;
+}
+
+a i{
+    margin-left: 3px;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+/* MAIN */
+main{
+    width: 100%;
+}
+
+main section{
+    background-color: #ebebeb;
+    margin: 30px;
+    padding: 15px;
+    box-shadow: 0px 0px 5px rgb(100, 100, 100);
+}
+
+section article{
+    margin: 15px 0;
+}
+
+.titulares{
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    margin: 20px;
+    text-align: center
+}
+
+.precios{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    width: 30%;
+}
+
+.fa-truck {
+    color: #39b54a;
+    border: 2px solid #39b54a;
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    padding-top: 5px;
+    margin: auto;
+    border-radius: 50%;
+    text-align: center;
+    display: block;
+    position: absolute;
+    top: -25px;
+    right: 30px;
+    transition: all 2s;
+}
+
+article:hover .fa-truck{
+    transform: rotateY(-180deg);
+}
+
+.descuentos{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #39b54a;
+    width: 70%;
+    text-align: center;
+    padding-left: 10px;
+}
+
+.detalles-producto i{
+    color:39b54a;
+}
+
+.descripciones{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: rgb(70, 57, 57);
+    background-color: #ffff;
+    padding-left: 25px;
+}
+
+
+.banner{
+    width: 100%;
+    height: 300px;
+}
+
+article img{
+    display: block;
+    width: 100%;
+}
+
+.detalles-producto{
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    background-color: #ffff;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    position: relative;
+}
+
+/*footer */
+footer{
+    background-color: #ebebeb;
+    border-top: 0.5px solid #666666;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+footer article{
+    width: 100%;
+    margin: 10px 1px;
+    text-align: center;
+}
+
+article i{
+    margin: 0px 50%;
+    color: #1259c3;
+    font-size: 2em;
+}
+
+.textos-footer{
+    font-size: 14px;
+    text-align: center;
+}
+
+/*----footer-----*/
+
+
+.main-header{
+    display: none;
+}
+
+.banner{
+    display: none;
+}
+
+@media screen and (min-width: 361px){
+    main section{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .titulares{
+        width: 100%;
+    }
+
+    .precios{
+        font-family: 'Roboto', sans-serif;
+        font-size: 1em;
+        width: 30%;
+        min-width: 44px;
+    }
+
+    .descuentos{
+        font-family: 'Roboto', sans-serif;
+        color: #39b54a;
+        width: 70%;
+        text-align: center;
+        font-size: 1em;
+        padding-left: 10px;
+        min-width: 105px;
+    }
+
+    section article{
+        width: 45%;
+        min-width: 158px;
+        margin: 5px;
+        background-color: #ffff;
+        box-shadow: 0px 0px 10px rgb(100 100 100);
+    }
+
+    section article img{
+        width: 100%;
+    }
+
+    .detalles-producto{
+        border-top: 1px solid #ebebeb;
+        padding: 15px;
+        background-color: #ffff;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    main section{
+        background-color: #ebebeb;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .titulares{
+        width: 100%;
+    }
+
+    section article{
+        min-width: 5%;
+        max-width: 23%;
+        transition: all 500ms;
+        background-color: #ffff;
+        box-shadow: none;
+    }
+
+    section article:hover{
+        box-shadow: 0px 0px 10px rgb(100 100 100);
+    }
+
+    section article img{
+        width: 100%;
+    }
+
+    .descripciones{
+        opacity: 0%;
+        transition: all 500ms;
+    }
+
+    article:hover .descripciones{
+        opacity: 100%;
+    }
+
+    .detalles-producto{
+        border-top: 1px solid #ebebeb;
+        padding: 15px;
+        background-color: #ffff;
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .banner{
+        display: block;
+    }
+
+    .contenedor-buscador button{
+        align-self: auto;
+        height: 25px;
+        width: 25px;
+        left: -9px;
+        position: relative;
+        top: -3px;
+    }
+    
+    .main-header{
+        display: flex;
+        justify-content: space-between;
+        max-width: 95vw;
+        margin: auto;
+    }
+
+    .main-header ul{
+        display: flex;
+        align-self: center;
+    }
+
+    ul li{
+        margin: 0 5px;
+        list-style: none;
+    }
+
+    .burger-menu{
+        display: none;
+    }
+
+    .top-header{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .logo{
+        width: 30vw;
+        min-width: 180px;
+        height: 150px;
+    }
+
+    .contenedor-buscador{
+        align-self: center;
+        width: 30vw;
+        min-width: 186px;
+        text-align: center;
+        display: block;
+    }
+ 
+    .contenedor-buscador input{
+        height: 25px;
+        width: 80%;
+        align-self: center;
+        margin-right: 2px;
+    }
+
+    .parraf-compra{
+        align-self: center;
+        font-weight: 900;
+        text-align: center;
+        width: 30vw;
+        min-width: 166px;
+        font-size: 15px;
+    }
+
+    footer article i{
+        transition: all 500ms;
+    }
+
+    footer article i:hover{
+        color:#0022AA;
+    }
+
+    footer{
+        background-color: #ebebeb;
+        border-top: 0.5px solid #666666;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    footer article{
+        width: 32%;
+        margin: 5px 0;
+    }
+
+    .copyright{
+        width:100%;
+    }
+
+}
